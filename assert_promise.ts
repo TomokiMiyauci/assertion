@@ -15,6 +15,8 @@ import { isPromise } from "https://deno.land/x/isx@1.3.0/is_promise.ts";
  * assertFalse(assertPromise(Promise.resolve()));
  * assertThrows(() => assertPromise({}));
  * ```
+ *
+ * @throws {Error} If the input is not `Promise`.
  */
 export function assertPromise<T>(
   input: unknown,

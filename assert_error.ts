@@ -16,6 +16,8 @@ import { isError } from "https://deno.land/x/isx@1.3.0/is_error.ts";
  * assertFalse(assertError(new SyntaxError()));
  * assertThrows(() => assertError(new Date()));
  * ```
+ *
+ * @throws {Error} If the input is not `Error`.
  */
 export function assertError(
   input: unknown,

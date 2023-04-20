@@ -17,6 +17,8 @@ import { isNonPositiveNumber } from "https://deno.land/x/isx@1.3.0/number/is_non
  * assertFalse(assertNonPositiveNumber(-1));
  * assertThrows(() => assertNonPositiveNumber(1));
  * ```
+ *
+ * @throws {Error} If the input is not non-positive number.
  */
 export function assertNonPositiveNumber(
   input: number,

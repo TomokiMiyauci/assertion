@@ -16,6 +16,8 @@ import { isObject } from "https://deno.land/x/isx@1.3.0/is_object.ts";
  * assertFalse(assertObject({}));
  * assertThrows(() => assertObject(null));
  * ```
+ *
+ * @throws {Error} If the input is not `object`.
  */
 export function assertObject(
   input: unknown,

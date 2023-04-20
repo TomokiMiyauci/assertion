@@ -15,6 +15,8 @@ import { isFunction } from "https://deno.land/x/isx@1.3.0/is_function.ts";
  * assertFalse(assertFunction(() => {}));
  * assertThrows(() => assertFunction({}));
  * ```
+ *
+ * @throws {Error} If the input is not `Function`.
  */
 export function assertFunction(
   input: unknown,

@@ -14,6 +14,8 @@ import { isEmpty } from "https://deno.land/x/isx@1.3.0/iterable/is_empty.ts";
  * assertFalse(assertEmpty(""));
  * assertThrows(() => assertEmpty("a"));
  * ```
+ *
+ * @throws {Error} If the input is not empty.
  */
 export function assertEmpty(input: string, msg?: string): asserts input is "";
 /** Assert the array is empty.
@@ -27,6 +29,8 @@ export function assertEmpty(input: string, msg?: string): asserts input is "";
  * assertFalse(assertEmpty([]));
  * assertThrows(() => assertEmpty([""]));
  * ```
+ *
+ * @throws {Error} If the input is not empty.
  */
 export function assertEmpty(
   input: unknown[],
@@ -47,6 +51,8 @@ export function assertEmpty(
  * assertFalse(assertEmpty(new Set()));
  * assertThrows(() => assertEmpty(new Set("")));
  * ```
+ *
+ * @throws {Error} If the input is not empty.
  */
 export function assertEmpty(
   input: Iterable<unknown>,

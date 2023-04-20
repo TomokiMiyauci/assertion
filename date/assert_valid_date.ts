@@ -15,6 +15,8 @@ import { isValidDate } from "https://deno.land/x/isx@1.3.0/date/is_valid_date.ts
  * assertFalse(assertValidDate(new Date("2000/1/1")));
  * assertThrows(() => assertValidDate(new Date("invalid")));
  * ```
+ *
+ * @throws {Error} If the input is invalid date.
  */
 export function assertValidDate(input: Date, msg?: string): asserts input {
   if (!isValidDate(input)) throw Error(msg);

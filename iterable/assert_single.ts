@@ -15,6 +15,8 @@ import { isSingle } from "https://deno.land/x/isx@1.3.0/iterable/is_single.ts";
  * assertThrows(() => assertSingle([]));
  * assertFalse(() => assertSingle([0, 1, 2]));
  * ```
+ *
+ * @throws {Error} If the input is not single element.
  */
 export function assertSingle<T>(input: T[], msg?: string): asserts input is [T];
 export function assertSingle<T>(
@@ -33,6 +35,8 @@ export function assertSingle<T>(
  * assertThrows(() => assertSingle(""));
  * assertThrows(() => assertSingle(new Set([0, 1, 2])));
  * ```
+ *
+ * @throws {Error} If the input is not single element.
  */
 export function assertSingle(
   input: Iterable<unknown>,

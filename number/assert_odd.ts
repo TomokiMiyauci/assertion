@@ -15,6 +15,8 @@ import { isOdd } from "https://deno.land/x/isx@1.3.0/number/is_odd.ts";
  * assertFalse(assertOdd(1));
  * assertThrows(() => assertOdd(0));
  * ```
+ *
+ * @throws {Error} If the input is not non-positive number.
  */
 export function assertOdd(input: number, msg?: string): asserts input {
   if (!isOdd(input)) throw Error(msg);

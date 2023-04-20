@@ -14,6 +14,8 @@ import { isNotEmpty } from "https://deno.land/x/isx@1.3.0/iterable/is_not_empty.
  * assertFalse(assertNotEmpty([""]));
  * assertFalse(assertNotEmpty([[]]));
  * ```
+ *
+ * @throws {Error} If the input is empty.
  */
 export function assertNotEmpty<T>(
   input: T[],
@@ -34,6 +36,8 @@ export function assertNotEmpty<T>(
  * assertFalse(assertNotEmpty("abc"));
  * assertFalse(assertNotEmpty([new Set([0, 1, 2])]));
  * ```
+ *
+ * @throws {Error} If the input is empty.
  */
 export function assertNotEmpty(
   input: Iterable<unknown>,

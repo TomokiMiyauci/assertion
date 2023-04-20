@@ -3,7 +3,7 @@
 
 import { isNonNullable } from "https://deno.land/x/isx@1.3.0/is_non_nullable.ts";
 
-/** Assert the input is `NonNullable`.
+/** Assert the input is not `null` or `undefined`.
  * @param input - Any input.
  * @example
  * ```ts
@@ -16,6 +16,8 @@ import { isNonNullable } from "https://deno.land/x/isx@1.3.0/is_non_nullable.ts"
  * assertThrows(() => assertNonNullable(null));
  * assertThrows(() => assertNonNullable(undefined));
  * ```
+ *
+ * @throws {Error} If the input is `null` or `undefined`.
  */
 export function assertNonNullable<T>(
   input: T,

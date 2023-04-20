@@ -17,6 +17,8 @@ import { isUnitInterval } from "https://deno.land/x/isx@1.3.0/number/is_unit_int
  * assertFalse(assertUnitInterval(1.0));
  * assertThrows(() => assertUnitInterval(-1));
  * ```
+ *
+ * @throws {Error} If the input is not unit interval.
  */
 export function assertUnitInterval(input: number, msg?: string): asserts input {
   if (!isUnitInterval(input)) throw Error(msg);

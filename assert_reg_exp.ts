@@ -15,6 +15,8 @@ import { isRegExp } from "https://deno.land/x/isx@1.3.0/is_reg_exp.ts";
  * assertFalse(assertRegExp(new RegExp("")));
  * assertThrows(() => assertRegExp({}));
  * ```
+ *
+ * @throws {Error} If the input is not `RegExp`.
  */
 export function assertRegExp(
   input: unknown,

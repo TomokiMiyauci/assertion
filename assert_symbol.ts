@@ -15,6 +15,8 @@ import { isSymbol } from "https://deno.land/x/isx@1.3.0/is_symbol.ts";
  * assertFalse(assertSymbol(Symbol("symbol")));
  * assertThrows(() => assertSymbol(null));
  * ```
+ *
+ * @throws {Error} If the input is not `symbol`.
  */
 export function assertSymbol(
   input: unknown,

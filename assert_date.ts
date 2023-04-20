@@ -15,6 +15,8 @@ import { isDate } from "https://deno.land/x/isx@1.3.0/is_date.ts";
  * assertFalse(assertDate(new Date()));
  * assertThrows(() => assertDate({}));
  * ```
+ *
+ * @throws {Error} If the input is not `Date`.
  */
 export function assertDate(
   input: unknown,

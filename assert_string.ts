@@ -15,6 +15,8 @@ import { isString } from "https://deno.land/x/isx@1.3.0/is_string.ts";
  * assertFalse(assertString("hello world"));
  * assertThrows(() => assertString(1000));
  * ```
+ *
+ * @throws {Error} If the input is not `string`.
  */
 export function assertString(
   input: unknown,

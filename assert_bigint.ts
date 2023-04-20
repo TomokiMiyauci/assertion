@@ -15,6 +15,8 @@ import { isBigint } from "https://deno.land/x/isx@1.3.0/is_bigint.ts";
  * assertFalse(assertBigint(1000n));
  * assertThrows(() => assertBigint(undefined));
  * ```
+ *
+ * @throws {Error} If the input is not `bigint`.
  */
 export function assertBigint(
   input: unknown,

@@ -19,6 +19,8 @@ export type { Primitive };
  * assertFalse(assertPrimitive(true));
  * assertThrows(() => assertPrimitive({}));
  * ```
+ *
+ * @throws {Error} If the input is not {@link Primitive}.
  */
 export function assertPrimitive(
   input: unknown,

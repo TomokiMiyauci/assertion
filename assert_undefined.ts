@@ -15,6 +15,8 @@ import { isUndefined } from "https://deno.land/x/isx@1.3.0/is_undefined.ts";
  * assertFalse(assertUndefined(undefined));
  * assertThrows(() => assertUndefined(null));
  * ```
+ *
+ * @throws {Error} If the input is not `undefined`.
  */
 export function assertUndefined(
   input: unknown,

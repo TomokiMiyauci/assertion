@@ -15,6 +15,8 @@ import { isNumber } from "https://deno.land/x/isx@1.3.0/is_number.ts";
  * assertFalse(assertNumber(1000));
  * assertThrows(() => assertNumber("hello world"));
  * ```
+ *
+ * @throws {Error} If the input is not `number`.
  */
 export function assertNumber(
   input: unknown,

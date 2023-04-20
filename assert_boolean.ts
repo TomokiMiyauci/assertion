@@ -15,6 +15,7 @@ import { isBoolean } from "https://deno.land/x/isx@1.3.0/is_boolean.ts";
  * assertFalse(assertBoolean(true));
  * assertThrows(() => assertBoolean(null));
  * ```
+ * @throws {Error} If the input is not `boolean`.
  */
 export function assertBoolean(
   input: unknown,

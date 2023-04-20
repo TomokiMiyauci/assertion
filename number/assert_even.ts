@@ -15,6 +15,8 @@ import { isEven } from "https://deno.land/x/isx@1.3.0/number/is_even.ts";
  * assertFalse(assertEven(0));
  * assertThrows(() => assertEven(1));
  * ```
+ *
+ * @throws {Error} If the input is not even.
  */
 export function assertEven(input: number, msg?: string): asserts input {
   if (!isEven(input)) throw Error(msg);

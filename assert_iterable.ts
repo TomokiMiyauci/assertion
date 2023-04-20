@@ -15,6 +15,8 @@ import { isIterable } from "https://deno.land/x/isx@1.3.0/is_iterable.ts";
  * assertFalse(assertIterable(""));
  * assertThrows(() => assertIterable({}));
  * ```
+ *
+ * @throws {Error} If the input is not `Iterable`.
  */
 export function assertIterable<T>(
   input: unknown,

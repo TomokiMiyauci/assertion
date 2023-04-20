@@ -15,6 +15,8 @@ import { isNull } from "https://deno.land/x/isx@1.3.0/is_null.ts";
  * assertFalse(assertNull(null));
  * assertThrows(() => assertNull(undefined));
  * ```
+ *
+ * @throws {Error} If the input is not `null`.
  */
 export function assertNull(
   input: unknown,

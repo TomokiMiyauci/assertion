@@ -16,6 +16,8 @@ import { isNullable } from "https://deno.land/x/isx@1.3.0/is_nullable.ts";
  * assertFalse(assertNullable(undefined));
  * assertThrows(() => assertNullable({}));
  * ```
+ *
+ * @throws {Error} If the input is not `null` or `undefined`.
  */
 export function assertNullable(
   input: unknown,
