@@ -180,7 +180,7 @@ assertThrows(() => assertIterable({}));
 
 [![badge](https://deno.bundlejs.com/?q=https://deno.land/x/assertion/assert_non_nullable.ts&badge=)](https://bundlejs.com/?q=https%3A%2F%2Fdeno.land%2Fx%2Fassertion%2Fassert_non_nullable.ts)
 
-Assert the input is `NonNullable`.
+Assert the input is not `null` or `undefined`.
 
 ```ts
 import { assertNonNullable } from "https://deno.land/x/assertion@$VERSION/assert_non_nullable.ts";
