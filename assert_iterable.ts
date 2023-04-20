@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isIterable } from "https://deno.land/x/isx@1.3.0/is_iterable.ts";
+import { isIterable } from "https://deno.land/x/isx@1.3.1/is_iterable.ts";
 
 /** Assert the input is `Iterable`.
  * @param input - Any input.

@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isBoolean } from "https://deno.land/x/isx@1.3.0/is_boolean.ts";
+import { isBoolean } from "https://deno.land/x/isx@1.3.1/is_boolean.ts";
 
 /** Assert the input is `boolean`.
  * @param input - Any input.

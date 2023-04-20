@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isNonNegativeNumber } from "https://deno.land/x/isx@1.3.0/number/is_non_negative_number.ts";
+import { isNonNegativeNumber } from "https://deno.land/x/isx@1.3.1/number/is_non_negative_number.ts";
 
 /** Assert the input is non-negative number.
  * Non-negative number means greater than or equal to zero.

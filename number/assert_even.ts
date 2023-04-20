@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isEven } from "https://deno.land/x/isx@1.3.0/number/is_even.ts";
+import { isEven } from "https://deno.land/x/isx@1.3.1/number/is_even.ts";
 
 /** Assert the input is even.
  * @param input - Any `number`.

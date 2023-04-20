@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isEmpty } from "https://deno.land/x/isx@1.3.0/iterable/is_empty.ts";
+import { isEmpty } from "https://deno.land/x/isx@1.3.1/iterable/is_empty.ts";
 
 /** Assert the string is empty.
  * @param input Any string.

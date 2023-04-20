@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isRegExp } from "https://deno.land/x/isx@1.3.0/is_reg_exp.ts";
+import { isRegExp } from "https://deno.land/x/isx@1.3.1/is_reg_exp.ts";
 
 /** Assert the input is `RegExp`.
  * @param input - Any input.

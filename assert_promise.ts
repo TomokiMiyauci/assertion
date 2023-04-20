@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isPromise } from "https://deno.land/x/isx@1.3.0/is_promise.ts";
+import { isPromise } from "https://deno.land/x/isx@1.3.1/is_promise.ts";
 
 /** Assert the input is `Promise`.
  * @param input - Any input.

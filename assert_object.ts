@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isObject } from "https://deno.land/x/isx@1.3.0/is_object.ts";
+import { isObject } from "https://deno.land/x/isx@1.3.1/is_object.ts";
 
 /** Assert the input is `object`.
  * @param input - Any input.

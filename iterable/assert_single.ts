@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isSingle } from "https://deno.land/x/isx@1.3.0/iterable/is_single.ts";
+import { isSingle } from "https://deno.land/x/isx@1.3.1/iterable/is_single.ts";
 
 /** Assert the input is single element.
  * @param input Any array.

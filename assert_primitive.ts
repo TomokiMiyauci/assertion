@@ -4,7 +4,7 @@
 import {
   isPrimitive,
   type Primitive,
-} from "https://deno.land/x/isx@1.3.0/is_primitive.ts";
+} from "https://deno.land/x/isx@1.3.1/is_primitive.ts";
 export type { Primitive };
 
 /** Assert the input is {@link Primitive}.

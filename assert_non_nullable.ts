@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isNonNullable } from "https://deno.land/x/isx@1.3.0/is_non_nullable.ts";
+import { isNonNullable } from "https://deno.land/x/isx@1.3.1/is_non_nullable.ts";
 
 /** Assert the input is not `null` or `undefined`.
  * @param input - Any input.

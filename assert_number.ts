@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isNumber } from "https://deno.land/x/isx@1.3.0/is_number.ts";
+import { isNumber } from "https://deno.land/x/isx@1.3.1/is_number.ts";
 
 /** Assert the input is `number`.
  * @param input - Any input.

@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isBigint } from "https://deno.land/x/isx@1.3.0/is_bigint.ts";
+import { isBigint } from "https://deno.land/x/isx@1.3.1/is_bigint.ts";
 
 /** Assert the input is `bigint`.
  * @param input - Any input.

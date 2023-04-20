@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isNotEmpty } from "https://deno.land/x/isx@1.3.0/iterable/is_not_empty.ts";
+import { isNotEmpty } from "https://deno.land/x/isx@1.3.1/iterable/is_not_empty.ts";
 
 /** Assert the array is not empty.
  * @param input Any array.

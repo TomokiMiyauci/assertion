@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isPositiveNumber } from "https://deno.land/x/isx@1.3.0/number/is_positive_number.ts";
+import { isPositiveNumber } from "https://deno.land/x/isx@1.3.1/number/is_positive_number.ts";
 
 /** Assert the input is positive number.
  * @param input - Any `number`.

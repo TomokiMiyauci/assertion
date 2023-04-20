@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isAsyncIterable } from "https://deno.land/x/isx@1.3.0/is_async_iterable.ts";
+import { isAsyncIterable } from "https://deno.land/x/isx@1.3.1/is_async_iterable.ts";
 
 /** Assert the input is `AsyncIterable`.
  * @param input - Any input.

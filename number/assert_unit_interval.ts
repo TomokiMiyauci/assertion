@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isUnitInterval } from "https://deno.land/x/isx@1.3.0/number/is_unit_interval.ts";
+import { isUnitInterval } from "https://deno.land/x/isx@1.3.1/number/is_unit_interval.ts";
 
 /** Assert the input is unit interval.
  * The unit interval means to the interval between 0 and 1 on the real number line.

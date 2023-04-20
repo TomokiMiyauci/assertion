@@ -1,25 +1,22 @@
 import { assertNonPositiveNumber } from "./assert_non_positive_number.ts";
-import { numbers } from "./_fixture.ts";
 import { assertFalse, assertThrows, describe, it } from "../_dev_deps.ts";
 
-describe("isNonPositiveNumber", () => {
-  it("should return void", () => {
-    numbers({
-      real: {
-        rational: {
-          decimal: {
-            negative: true,
-          },
-          integer: {
-            zero: true,
-            negative: true,
-          },
-        },
-      },
-    }).forEach(
-      (input) => assertFalse(assertNonPositiveNumber(input), String(input)),
-    );
+describe("assertNonPositiveNumber", () => {
+  it("should return true", () => {
+    const table: number[] = [
+      0,
+      -0,
+      -1,
+      -0.1,
+      -Infinity,
+      Number.MIN_SAFE_INTEGER,
+    ];
+
+    table.forEach((input) => {
+      assertFalse(assertNonPositiveNumber(input));
+    });
   });
+
   it("should throw error", () => {
     const table: number[] = [
       1,

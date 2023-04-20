@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isError } from "https://deno.land/x/isx@1.3.0/is_error.ts";
+import { isError } from "https://deno.land/x/isx@1.3.1/is_error.ts";
 
 /** Assert the input is `Error`.
  * @param input - Any input.

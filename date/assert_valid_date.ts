@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isValidDate } from "https://deno.land/x/isx@1.3.0/date/is_valid_date.ts";
+import { isValidDate } from "https://deno.land/x/isx@1.3.1/date/is_valid_date.ts";
 
 /** Assert the input is valid `Date`.
  * @param input - Any `Date`

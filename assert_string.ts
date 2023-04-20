@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isString } from "https://deno.land/x/isx@1.3.0/is_string.ts";
+import { isString } from "https://deno.land/x/isx@1.3.1/is_string.ts";
 
 /** Assert the input is `string`.
  * @param input - Any input.

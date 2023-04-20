@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isDate } from "https://deno.land/x/isx@1.3.0/is_date.ts";
+import { isDate } from "https://deno.land/x/isx@1.3.1/is_date.ts";
 
 /** Assert the input is `Date`.
  * @param input - Any input.

@@ -1,7 +1,7 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { isNegativeNumber } from "https://deno.land/x/isx@1.3.0/number/is_negative_number.ts";
+import { isNegativeNumber } from "https://deno.land/x/isx@1.3.1/number/is_negative_number.ts";
 
 /** Assert the input is negative number.
  * @param input - Any `number`.
