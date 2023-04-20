@@ -8,7 +8,7 @@ import { isNotEmpty } from "https://deno.land/x/isx@1.3.0/iterable/is_not_empty.
  *
  * @example
  * ```ts
- * import { assertNotEmpty } from "https://deno.land/x/isx@$VERSION/iterable/assert_not_empty.ts";
+ * import { assertNotEmpty } from "https://deno.land/x/assertion@$VERSION/iterable/assert_not_empty.ts";
  * import { assertFalse } from "https://deno.land/std/testing/asserts.ts";
  *
  * assertFalse(assertNotEmpty([""]));
@@ -28,7 +28,7 @@ export function assertNotEmpty<T>(
  *
  * @example
  * ```ts
- * import { assertNotEmpty } from "https://deno.land/x/isx@$VERSION/iterable/assert_not_empty.ts";
+ * import { assertNotEmpty } from "https://deno.land/x/assertion@$VERSION/iterable/assert_not_empty.ts";
  * import { assertFalse } from "https://deno.land/std/testing/asserts.ts";
  *
  * assertFalse(assertNotEmpty("abc"));

@@ -7,7 +7,7 @@ import { isAsyncIterable } from "https://deno.land/x/isx@1.3.0/is_async_iterable
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertAsyncIterable } from "https://deno.land/x/isx@$VERSION/assert_async_iterable.ts";
+ * import { assertAsyncIterable } from "https://deno.land/x/assertion@$VERSION/assert_async_iterable.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

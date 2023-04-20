@@ -7,7 +7,7 @@ import { isNull } from "https://deno.land/x/isx@1.3.0/is_null.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertNull } from "https://deno.land/x/isx@$VERSION/assert_null.ts";
+ * import { assertNull } from "https://deno.land/x/assertion@$VERSION/assert_null.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

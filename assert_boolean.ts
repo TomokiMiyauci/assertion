@@ -7,7 +7,7 @@ import { isBoolean } from "https://deno.land/x/isx@1.3.0/is_boolean.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertBoolean } from "https://deno.land/x/isx@$VERSION/assert_boolean.ts";
+ * import { assertBoolean } from "https://deno.land/x/assertion@$VERSION/assert_boolean.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

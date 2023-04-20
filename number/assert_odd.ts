@@ -7,7 +7,7 @@ import { isOdd } from "https://deno.land/x/isx@1.3.0/number/is_odd.ts";
  * @param input - Any `number`.
  * @example
  * ```ts
- * import { assertOdd } from "https://deno.land/x/isx@$VERSION/number/assert_odd.ts";
+ * import { assertOdd } from "https://deno.land/x/assertion@$VERSION/number/assert_odd.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

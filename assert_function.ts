@@ -7,7 +7,7 @@ import { isFunction } from "https://deno.land/x/isx@1.3.0/is_function.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertFunction } from "https://deno.land/x/isx@$VERSION/assert_function.ts";
+ * import { assertFunction } from "https://deno.land/x/assertion@$VERSION/assert_function.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

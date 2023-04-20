@@ -7,7 +7,7 @@ import { isError } from "https://deno.land/x/isx@1.3.0/is_error.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertError } from "https://deno.land/x/isx@$VERSION/assert_error.ts";
+ * import { assertError } from "https://deno.land/x/assertion@$VERSION/assert_error.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

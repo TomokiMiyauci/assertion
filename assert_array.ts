@@ -7,7 +7,7 @@
  *
  * @example
  * ```ts
- * import { assertArray } from "https://deno.land/x/isx@$VERSION/assert_array.ts";
+ * import { assertArray } from "https://deno.land/x/assertion@$VERSION/assert_array.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

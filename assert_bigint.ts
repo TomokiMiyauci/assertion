@@ -7,7 +7,7 @@ import { isBigint } from "https://deno.land/x/isx@1.3.0/is_bigint.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertBigint } from "https://deno.land/x/isx@$VERSION/assert_bigint.ts";
+ * import { assertBigint } from "https://deno.land/x/assertion@$VERSION/assert_bigint.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

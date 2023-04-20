@@ -7,7 +7,7 @@ import { isNonNullable } from "https://deno.land/x/isx@1.3.0/is_non_nullable.ts"
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertNonNullable } from "https://deno.land/x/isx@$VERSION/assert_non_nullable.ts";
+ * import { assertNonNullable } from "https://deno.land/x/assertion@$VERSION/assert_non_nullable.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

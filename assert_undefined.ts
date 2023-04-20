@@ -7,7 +7,7 @@ import { isUndefined } from "https://deno.land/x/isx@1.3.0/is_undefined.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertUndefined } from "https://deno.land/x/isx@$VERSION/assert_undefined.ts";
+ * import { assertUndefined } from "https://deno.land/x/assertion@$VERSION/assert_undefined.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

@@ -7,7 +7,7 @@ import { isPromise } from "https://deno.land/x/isx@1.3.0/is_promise.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertPromise } from "https://deno.land/x/isx@$VERSION/assert_promise.ts";
+ * import { assertPromise } from "https://deno.land/x/assertion@$VERSION/assert_promise.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

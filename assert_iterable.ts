@@ -7,7 +7,7 @@ import { isIterable } from "https://deno.land/x/isx@1.3.0/is_iterable.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertIterable } from "https://deno.land/x/isx@$VERSION/assert_iterable.ts";
+ * import { assertIterable } from "https://deno.land/x/assertion@$VERSION/assert_iterable.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

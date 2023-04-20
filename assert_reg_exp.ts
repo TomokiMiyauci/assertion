@@ -7,7 +7,7 @@ import { isRegExp } from "https://deno.land/x/isx@1.3.0/is_reg_exp.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertRegExp } from "https://deno.land/x/isx@$VERSION/assert_reg_exp.ts";
+ * import { assertRegExp } from "https://deno.land/x/assertion@$VERSION/assert_reg_exp.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

@@ -7,7 +7,7 @@ import { isPositiveNumber } from "https://deno.land/x/isx@1.3.0/number/is_positi
  * @param input - Any `number`.
  * @example
  * ```ts
- * import { assertPositiveNumber } from "https://deno.land/x/isx@$VERSION/number/assert_positive_number.ts";
+ * import { assertPositiveNumber } from "https://deno.land/x/assertion@$VERSION/number/assert_positive_number.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

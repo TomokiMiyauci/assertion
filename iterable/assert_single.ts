@@ -8,7 +8,7 @@ import { isSingle } from "https://deno.land/x/isx@1.3.0/iterable/is_single.ts";
  *
  * @example
  * ```ts
- * import { assertSingle } from "https://deno.land/x/isx@$VERSION/iterable/assert_single.ts";
+ * import { assertSingle } from "https://deno.land/x/assertion@$VERSION/iterable/assert_single.ts";
  * import { assertFalse, assertThrows } from "https://deno.land/std/testing/asserts.ts";
  *
  * assertFalse(assertSingle([0]));
@@ -26,7 +26,7 @@ export function assertSingle<T>(
  *
  * @example
  * ```ts
- * import { assertSingle } from "https://deno.land/x/isx@$VERSION/iterable/assert_single.ts";
+ * import { assertSingle } from "https://deno.land/x/assertion@$VERSION/iterable/assert_single.ts";
  * import { assertFalse, assertThrows } from "https://deno.land/std/testing/asserts.ts";
  *
  * assertFalse(assertSingle("a"));

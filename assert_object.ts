@@ -8,7 +8,7 @@ import { isObject } from "https://deno.land/x/isx@1.3.0/is_object.ts";
  *
  * @example
  * ```ts
- * import { assertObject } from "https://deno.land/x/isx@$VERSION/assert_object.ts";
+ * import { assertObject } from "https://deno.land/x/assertion@$VERSION/assert_object.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

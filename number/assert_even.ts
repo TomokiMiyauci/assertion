@@ -7,7 +7,7 @@ import { isEven } from "https://deno.land/x/isx@1.3.0/number/is_even.ts";
  * @param input - Any `number`.
  * @example
  * ```ts
- * import { assertEven } from "https://deno.land/x/isx@$VERSION/number/assert_even.ts";
+ * import { assertEven } from "https://deno.land/x/assertion@$VERSION/number/assert_even.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

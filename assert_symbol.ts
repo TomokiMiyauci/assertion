@@ -7,7 +7,7 @@ import { isSymbol } from "https://deno.land/x/isx@1.3.0/is_symbol.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertSymbol } from "https://deno.land/x/isx@$VERSION/assert_symbol.ts";
+ * import { assertSymbol } from "https://deno.land/x/assertion@$VERSION/assert_symbol.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

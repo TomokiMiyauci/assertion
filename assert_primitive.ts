@@ -11,7 +11,7 @@ export type { Primitive };
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertPrimitive } from "https://deno.land/x/isx@$VERSION/assert_primitive.ts";
+ * import { assertPrimitive } from "https://deno.land/x/assertion@$VERSION/assert_primitive.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

@@ -8,7 +8,7 @@ import { isUnitInterval } from "https://deno.land/x/isx@1.3.0/number/is_unit_int
  * @param input Any `number`
  * @example
  * ```ts
- * import { assertUnitInterval } from "https://deno.land/x/isx@$VERSION/number/assert_unit_interval.ts";
+ * import { assertUnitInterval } from "https://deno.land/x/assertion@$VERSION/number/assert_unit_interval.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

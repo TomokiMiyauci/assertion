@@ -7,7 +7,7 @@ import { isValidDate } from "https://deno.land/x/isx@1.3.0/date/is_valid_date.ts
  * @param input - Any `Date`
  * @example
  * ```ts
- * import { assertValidDate } from "https://deno.land/x/isx@$VERSION/date/assert_valid_date.ts";
+ * import { assertValidDate } from "https://deno.land/x/assertion@$VERSION/date/assert_valid_date.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

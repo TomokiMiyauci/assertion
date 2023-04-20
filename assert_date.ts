@@ -7,7 +7,7 @@ import { isDate } from "https://deno.land/x/isx@1.3.0/is_date.ts";
  * @param input - Any input.
  * @example
  * ```ts
- * import { assertDate } from "https://deno.land/x/isx@$VERSION/assert_date.ts";
+ * import { assertDate } from "https://deno.land/x/assertion@$VERSION/assert_date.ts";
  * import {
  *   assertFalse,
  *   assertThrows,

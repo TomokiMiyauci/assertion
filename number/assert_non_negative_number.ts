@@ -8,7 +8,7 @@ import { isNonNegativeNumber } from "https://deno.land/x/isx@1.3.0/number/is_non
  * @param input - Any `number`.
  * @example
  * ```ts
- * import { assertNonNegativeNumber } from "https://deno.land/x/isx@$VERSION/number/assert_non_negative_number.ts";
+ * import { assertNonNegativeNumber } from "https://deno.land/x/assertion@$VERSION/number/assert_non_negative_number.ts";
  * import {
  *   assertFalse,
  *   assertThrows,
