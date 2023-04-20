@@ -48,9 +48,11 @@ jobs:
         run: deno task test --coverage=coverage
 
       - name: Generate coverage
-        run: deno task coverage coverage --output=cov_profile.lcov --lcov
+        if: ${{ matrix.deno == 'v1.x' }}
+        run: deno task coverage coverage --lcov > cov_profile.lcov
 
       - uses: codecov/codecov-action@v2
+        if: ${{ matrix.deno == 'v1.x' }}
         with:
           files: cov_profile.lcov
 
