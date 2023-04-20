@@ -32,6 +32,15 @@ type-specific methods and compare values.
 For example, the module under `number` is a sub-type module that takes a
 `number` type as an argument.
 
+## Common
+
+All function signatures have an `asserts` specifier.
+
+If the assertion fails, an error is thrown. The error is an `Error` object.
+Also, there are no error messages by default.
+
+You can specify error messages in the second argument.
+
 ## assertArray
 
 [![badge](https://deno.bundlejs.com/?q=https://deno.land/x/assertion/assert_array.ts&badge=)](https://bundlejs.com/?q=https%3A%2F%2Fdeno.land%2Fx%2Fassertion%2Fassert_array.ts)
