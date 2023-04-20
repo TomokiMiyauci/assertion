@@ -1,0 +1,24 @@
+// Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
+// This module is browser compatible.
+
+import { isString } from "https://deno.land/x/isx@1.3.0/is_string.ts";
+
+/** Assert the input is `string`.
+ * @param input - Any input.
+ * @example
+ * ```ts
+ * import { assertString } from "https://deno.land/x/isx@$VERSION/assert_string.ts";
+ * import {
+ *   assertFalse,
+ *   assertThrows,
+ * } from "https://deno.land/std/testing/asserts.ts";
+ * assertFalse(assertString("hello world"));
+ * assertThrows(() => assertString(1000));
+ * ```
+ */
+export function assertString(
+  input: unknown,
+  msg?: string,
+): asserts input is string {
+  if (!isString(input)) throw Error(msg);
+}
