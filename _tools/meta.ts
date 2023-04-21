@@ -44,7 +44,7 @@ function toDts(path: string): string {
 
 export const makeOptions = (version: string): BuildOptions => {
   const root = fromFileUrl(import.meta.resolve("../"));
-  const entries = expandGlobSync("**/!(*_test.ts)assert_*.ts", {
+  const entries = expandGlobSync("**/!(*_test.ts){assert_,types}*.ts", {
     includeDirs: false,
     root,
   });
