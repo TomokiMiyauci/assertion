@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isSymbol } from "https://deno.land/x/isx@1.3.1/is_symbol.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `symbol`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isSymbol } from "https://deno.land/x/isx@1.3.1/is_symbol.ts";
 export function assertSymbol(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is symbol {
-  if (!isSymbol(input)) throw Error(msg);
+  if (!isSymbol(input)) throw new constructor(msg);
 }

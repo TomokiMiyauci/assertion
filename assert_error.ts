@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isError } from "https://deno.land/x/isx@1.3.1/is_error.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `Error`.
  * @param input - Any input.
@@ -22,6 +23,7 @@ import { isError } from "https://deno.land/x/isx@1.3.1/is_error.ts";
 export function assertError(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is Error {
-  if (!isError(input)) throw Error(msg);
+  if (!isError(input)) throw new constructor(msg);
 }

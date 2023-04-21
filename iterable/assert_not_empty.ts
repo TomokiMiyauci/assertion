@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isNotEmpty } from "https://deno.land/x/isx@1.3.1/iterable/is_not_empty.ts";
+import type { ErrorConstructorLike } from "../types.ts";
 
 /** Assert the array is not empty.
  * @param input Any array.
@@ -20,10 +21,12 @@ import { isNotEmpty } from "https://deno.land/x/isx@1.3.1/iterable/is_not_empty.
 export function assertNotEmpty<T>(
   input: T[],
   msg?: string,
+  constructor?: ErrorConstructorLike,
 ): asserts input is [T, ...T[]];
 export function assertNotEmpty<T>(
   input: readonly T[],
   msg?: string,
+  constructor?: ErrorConstructorLike,
 ): asserts input is readonly [T, ...T[]];
 /** Assert the input is not empty.
  * @param input Any iterable.
@@ -42,10 +45,12 @@ export function assertNotEmpty<T>(
 export function assertNotEmpty(
   input: Iterable<unknown>,
   msg?: string,
+  constructor?: ErrorConstructorLike,
 ): asserts input;
 export function assertNotEmpty(
   input: Iterable<unknown>,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input {
-  if (!isNotEmpty(input)) throw Error(msg);
+  if (!isNotEmpty(input)) throw new constructor(msg);
 }

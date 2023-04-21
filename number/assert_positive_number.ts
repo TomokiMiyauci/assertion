@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isPositiveNumber } from "https://deno.land/x/isx@1.3.1/number/is_positive_number.ts";
+import type { ErrorConstructorLike } from "../types.ts";
 
 /** Assert the input is positive number.
  * @param input - Any `number`.
@@ -21,6 +22,7 @@ import { isPositiveNumber } from "https://deno.land/x/isx@1.3.1/number/is_positi
 export function assertPositiveNumber(
   input: number,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input {
-  if (!isPositiveNumber(input)) throw Error(msg);
+  if (!isPositiveNumber(input)) throw new constructor(msg);
 }

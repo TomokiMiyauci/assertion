@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isUnitInterval } from "https://deno.land/x/isx@1.3.1/number/is_unit_interval.ts";
+import type { ErrorConstructorLike } from "../types.ts";
 
 /** Assert the input is unit interval.
  * The unit interval means to the interval between 0 and 1 on the real number line.
@@ -20,6 +21,10 @@ import { isUnitInterval } from "https://deno.land/x/isx@1.3.1/number/is_unit_int
  *
  * @throws {Error} If the input is not unit interval.
  */
-export function assertUnitInterval(input: number, msg?: string): asserts input {
-  if (!isUnitInterval(input)) throw Error(msg);
+export function assertUnitInterval(
+  input: number,
+  msg?: string,
+  constructor: ErrorConstructorLike = Error,
+): asserts input {
+  if (!isUnitInterval(input)) throw new constructor(msg);
 }

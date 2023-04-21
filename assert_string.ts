@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isString } from "https://deno.land/x/isx@1.3.1/is_string.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `string`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isString } from "https://deno.land/x/isx@1.3.1/is_string.ts";
 export function assertString(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is string {
-  if (!isString(input)) throw Error(msg);
+  if (!isString(input)) throw new constructor(msg);
 }

@@ -36,10 +36,38 @@ For example, the module under `number` is a sub-type module that takes a
 
 All function signatures have an `asserts` specifier.
 
-If the assertion fails, an error is thrown. The error is an `Error` object.
-Also, there are no error messages by default.
+All modules throw an error if the assert fails. And the errors are fully
+customizable.
 
-You can specify error messages in the second argument.
+### Error message
+
+No opinion on error message. Nothing by default.
+
+You can give message.
+
+```ts
+import { assertNumber } from "https://deno.land/x/assertion@$VERSION/assert_number.ts";
+
+declare const input: unknown;
+
+assertNumber(input, `must be number`);
+```
+
+### Error constructor
+
+No opinion on error constructor.
+
+By default, use `Error` constructor.
+
+To throw `RangeError` instead, do the following.
+
+```ts
+import { assertNonNegativeInteger } from "https://deno.land/x/assertion@$VERSION/number/assert_non_negative_integer.ts";
+
+declare const input: number;
+
+assertNonNegativeInteger(input, `must be non-negative integer`, RangeError);
+```
 
 ## assertArray
 

@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isValidDate } from "https://deno.land/x/isx@1.3.1/date/is_valid_date.ts";
+import type { ErrorConstructorLike } from "../types.ts";
 
 /** Assert the input is valid `Date`.
  * @param input - Any `Date`
@@ -18,6 +19,10 @@ import { isValidDate } from "https://deno.land/x/isx@1.3.1/date/is_valid_date.ts
  *
  * @throws {Error} If the input is invalid date.
  */
-export function assertValidDate(input: Date, msg?: string): asserts input {
-  if (!isValidDate(input)) throw Error(msg);
+export function assertValidDate(
+  input: Date,
+  msg?: string,
+  constructor: ErrorConstructorLike = Error,
+): asserts input {
+  if (!isValidDate(input)) throw new constructor(msg);
 }

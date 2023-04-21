@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isSingle } from "https://deno.land/x/isx@1.3.1/iterable/is_single.ts";
+import type { ErrorConstructorLike } from "../types.ts";
 
 /** Assert the input is single element.
  * @param input Any array.
@@ -18,10 +19,15 @@ import { isSingle } from "https://deno.land/x/isx@1.3.1/iterable/is_single.ts";
  *
  * @throws {Error} If the input is not single element.
  */
-export function assertSingle<T>(input: T[], msg?: string): asserts input is [T];
+export function assertSingle<T>(
+  input: T[],
+  msg?: string,
+  constructor?: ErrorConstructorLike,
+): asserts input is [T];
 export function assertSingle<T>(
   input: readonly T[],
   msg?: string,
+  constructor?: ErrorConstructorLike,
 ): asserts input is readonly [T];
 /** Assert the input is single element.
  * @param input Any iterable.
@@ -41,10 +47,12 @@ export function assertSingle<T>(
 export function assertSingle(
   input: Iterable<unknown>,
   msg?: string,
+  constructor?: ErrorConstructorLike,
 ): asserts input;
 export function assertSingle(
   input: Iterable<unknown>,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input {
-  if (!isSingle(input)) throw Error(msg);
+  if (!isSingle(input)) throw new constructor(msg);
 }

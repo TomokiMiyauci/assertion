@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isNull } from "https://deno.land/x/isx@1.3.1/is_null.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `null`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isNull } from "https://deno.land/x/isx@1.3.1/is_null.ts";
 export function assertNull(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is null {
-  if (!isNull(input)) throw Error(msg);
+  if (!isNull(input)) throw new constructor(msg);
 }

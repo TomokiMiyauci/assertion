@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isIterable } from "https://deno.land/x/isx@1.3.1/is_iterable.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `Iterable`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isIterable } from "https://deno.land/x/isx@1.3.1/is_iterable.ts";
 export function assertIterable<T>(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is Iterable<T> {
-  if (!isIterable(input)) throw Error(msg);
+  if (!isIterable(input)) throw new constructor(msg);
 }

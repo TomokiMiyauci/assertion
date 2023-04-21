@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isFunction } from "https://deno.land/x/isx@1.3.1/is_function.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `Function`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isFunction } from "https://deno.land/x/isx@1.3.1/is_function.ts";
 export function assertFunction(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is Function {
-  if (!isFunction(input)) throw Error(msg);
+  if (!isFunction(input)) throw new constructor(msg);
 }

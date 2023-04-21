@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isOdd } from "https://deno.land/x/isx@1.3.1/number/is_odd.ts";
+import type { ErrorConstructorLike } from "../types.ts";
 
 /** Assert the input is odd.
  * @param input - Any `number`.
@@ -18,6 +19,10 @@ import { isOdd } from "https://deno.land/x/isx@1.3.1/number/is_odd.ts";
  *
  * @throws {Error} If the input is not non-positive number.
  */
-export function assertOdd(input: number, msg?: string): asserts input {
-  if (!isOdd(input)) throw Error(msg);
+export function assertOdd(
+  input: number,
+  msg?: string,
+  constructor: ErrorConstructorLike = Error,
+): asserts input {
+  if (!isOdd(input)) throw new constructor(msg);
 }

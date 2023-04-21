@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isObject } from "https://deno.land/x/isx@1.3.1/is_object.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `object`.
  * @param input - Any input.
@@ -22,6 +23,7 @@ import { isObject } from "https://deno.land/x/isx@1.3.1/is_object.ts";
 export function assertObject(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is object {
-  if (!isObject(input)) throw Error(msg);
+  if (!isObject(input)) throw new constructor(msg);
 }

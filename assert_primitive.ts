@@ -5,6 +5,8 @@ import {
   isPrimitive,
   type Primitive,
 } from "https://deno.land/x/isx@1.3.1/is_primitive.ts";
+import type { ErrorConstructorLike } from "./types.ts";
+
 export type { Primitive };
 
 /** Assert the input is {@link Primitive}.
@@ -25,6 +27,7 @@ export type { Primitive };
 export function assertPrimitive(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is Primitive {
-  if (!isPrimitive(input)) throw Error(msg);
+  if (!isPrimitive(input)) throw new constructor(msg);
 }

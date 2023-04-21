@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isUndefined } from "https://deno.land/x/isx@1.3.1/is_undefined.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `undefined`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isUndefined } from "https://deno.land/x/isx@1.3.1/is_undefined.ts";
 export function assertUndefined(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is undefined {
-  if (!isUndefined(input)) throw Error(msg);
+  if (!isUndefined(input)) throw new constructor(msg);
 }

@@ -1,6 +1,8 @@
 // Copyright 2023-latest Tomoki Miyauchi. All rights reserved. MIT license.
 // This module is browser compatible.
 
+import type { ErrorConstructorLike } from "./types.ts";
+
 /** Assert the input is array.
  *
  * @param Any input.
@@ -21,6 +23,7 @@
 export function assertArray(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is unknown[] {
-  if (!Array.isArray(input)) throw Error(msg);
+  if (!Array.isArray(input)) throw new constructor(msg);
 }

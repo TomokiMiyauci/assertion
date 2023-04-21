@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isRegExp } from "https://deno.land/x/isx@1.3.1/is_reg_exp.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `RegExp`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isRegExp } from "https://deno.land/x/isx@1.3.1/is_reg_exp.ts";
 export function assertRegExp(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is RegExp {
-  if (!isRegExp(input)) throw Error(msg);
+  if (!isRegExp(input)) throw new constructor(msg);
 }

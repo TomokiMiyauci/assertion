@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isNonNullable } from "https://deno.land/x/isx@1.3.1/is_non_nullable.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is not `null` or `undefined`.
  * @param input - Any input.
@@ -22,6 +23,7 @@ import { isNonNullable } from "https://deno.land/x/isx@1.3.1/is_non_nullable.ts"
 export function assertNonNullable<T>(
   input: T,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is NonNullable<T> {
-  if (!isNonNullable(input)) throw Error(msg);
+  if (!isNonNullable(input)) throw new constructor(msg);
 }

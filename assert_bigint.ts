@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isBigint } from "https://deno.land/x/isx@1.3.1/is_bigint.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `bigint`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isBigint } from "https://deno.land/x/isx@1.3.1/is_bigint.ts";
 export function assertBigint(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is bigint {
-  if (!isBigint(input)) throw Error(msg);
+  if (!isBigint(input)) throw new constructor(msg);
 }

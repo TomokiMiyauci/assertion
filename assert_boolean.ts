@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isBoolean } from "https://deno.land/x/isx@1.3.1/is_boolean.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `boolean`.
  * @param input - Any input.
@@ -20,6 +21,7 @@ import { isBoolean } from "https://deno.land/x/isx@1.3.1/is_boolean.ts";
 export function assertBoolean(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is boolean {
-  if (!isBoolean(input)) throw Error(msg);
+  if (!isBoolean(input)) throw new constructor(msg);
 }

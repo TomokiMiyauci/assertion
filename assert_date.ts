@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isDate } from "https://deno.land/x/isx@1.3.1/is_date.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `Date`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isDate } from "https://deno.land/x/isx@1.3.1/is_date.ts";
 export function assertDate(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is Date {
-  if (!isDate(input)) throw Error(msg);
+  if (!isDate(input)) throw new constructor(msg);
 }

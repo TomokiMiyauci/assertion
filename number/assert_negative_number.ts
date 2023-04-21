@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isNegativeNumber } from "https://deno.land/x/isx@1.3.1/number/is_negative_number.ts";
+import type { ErrorConstructorLike } from "../types.ts";
 
 /** Assert the input is negative number.
  * @param input - Any `number`.
@@ -21,6 +22,7 @@ import { isNegativeNumber } from "https://deno.land/x/isx@1.3.1/number/is_negati
 export function assertNegativeNumber(
   input: number,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input {
-  if (!isNegativeNumber(input)) throw Error(msg);
+  if (!isNegativeNumber(input)) throw new constructor(msg);
 }

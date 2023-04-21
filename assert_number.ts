@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isNumber } from "https://deno.land/x/isx@1.3.1/is_number.ts";
+import type { ErrorConstructorLike } from "./types.ts";
 
 /** Assert the input is `number`.
  * @param input - Any input.
@@ -21,6 +22,7 @@ import { isNumber } from "https://deno.land/x/isx@1.3.1/is_number.ts";
 export function assertNumber(
   input: unknown,
   msg?: string,
+  constructor: ErrorConstructorLike = Error,
 ): asserts input is number {
-  if (!isNumber(input)) throw Error(msg);
+  if (!isNumber(input)) throw new constructor(msg);
 }

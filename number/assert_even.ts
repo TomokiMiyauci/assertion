@@ -2,6 +2,7 @@
 // This module is browser compatible.
 
 import { isEven } from "https://deno.land/x/isx@1.3.1/number/is_even.ts";
+import type { ErrorConstructorLike } from "../types.ts";
 
 /** Assert the input is even.
  * @param input - Any `number`.
@@ -18,6 +19,10 @@ import { isEven } from "https://deno.land/x/isx@1.3.1/number/is_even.ts";
  *
  * @throws {Error} If the input is not even.
  */
-export function assertEven(input: number, msg?: string): asserts input {
-  if (!isEven(input)) throw Error(msg);
+export function assertEven(
+  input: number,
+  msg?: string,
+  constructor: ErrorConstructorLike = Error,
+): asserts input {
+  if (!isEven(input)) throw new constructor(msg);
 }
