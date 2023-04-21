@@ -1,3 +1,10 @@
+# [1.0.0-beta.3](https://github.com/TomokiMiyauci/assertion/compare/1.0.0-beta.2...1.0.0-beta.3) (2023-04-21)
+
+
+### Features
+
+* accept error constructor ([5ada346](https://github.com/TomokiMiyauci/assertion/commit/5ada3469b9fc19780031162286d40a3d4333f8d1))
+
 # [1.0.0-beta.2](https://github.com/TomokiMiyauci/assertion/compare/1.0.0-beta.1...1.0.0-beta.2) (2023-04-20)
 
 
